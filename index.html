@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kshitij</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="shortcut icon"
+      href="./Images/mountains_front.png"
+      type="image/x-icon"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav>
+        <div class="logo">
+          <h1>Kshitij</h1>
+        </div>
+        <!-- NavLinks -->
+        <div class="navlinks">
+          <a href="" class="active">Home</a>
+          <a href="">Work</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </div>
+      </nav>
+
+      <!-- hero-section -->
+      <section class="hero-section">
+        <img src="./Images/moon.png" alt="" id="moon" />
+        <img src="./Images/stars.png" alt="" id="star" />
+        <img src="./Images/mountains_behind.png" alt="" id="mountains_behind" />
+        <!-- Main Heading -->
+        <h2 id="mainHeading">KSHITIJ</h2>
+        <a href="#content" class="btn" id="exploreBtn">EXPLORE</a>
+        <img src="./Images/mountains_front.png" alt="" id="mountains_front" />
+      </section>
+      <!-- Content -->
+      <section class="content" id="content">
+        <div>
+            <h2>Kshitij Singh</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit magnam alias harum laborum culpa et quasi. Magnam nobis suscipit dolor, sit dolorum nihil sint aliquam atque recusandae nostrum blanditiis tempora vel eius totam quo commodi, aspernatur quia et consequuntur facilis sequi! Tempore, maiores tempora deserunt sit accusamus corrupti officiis. Inventore ex, quam soluta magni accusamus modi quae dolore praesentium unde ipsa nesciunt repudiandae ut itaque vero expedita vel voluptatum dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laboriosam nemo neque distinctio vero repellat recusandae quaerat iure magni exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus facilis odit aliquid
+                <br /><br />
+                Lorem ipsum dolor, sit amet consectetur adipisifcing elit. Veritatis doloribus voluptatum, quae dignissimos magnam ipsum voluptatem earum? Distinctio, eveniet. Maiores magni dolorem exercitationem, dolore sapiente dolorum deleniti corporis iure aut labore inventore. Dolorem perspiciatis similique officia at voluptates expedita, deleniti eaque dolor numquam non mollitia quos? Quo magnam commodi, alias ab veniam, excepturi deserunt pariatur totam laboriosam ullam sit? Iste culpa perferendis consectetur quibusdam ad velit deserunt ipsa unde impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officia est. Deleniti, repudiandae velit! Aspernatur autem minima reiciendis distinctio! Magni!
+                <br /><br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate officiis qui esse, explicabo voluptates optio magnam dolore, sed veritatis aperiam blanditiis impedit dignissimos delectus, facilis debitis fugiat perspiciatis voluptatem similique quasi aliquam porro nam quibusdam. Dolores, sit tenetur. Ea voluptatum, repudiandae cupiditate facilis consequatur debitis impedit aspernatur provident doloribus, atque at tempora odit dolorem similique sequi excepturi illo alias vitae mollitia! Nisi fuga expedita accusantium recusandae, nesciunt aspernatur
+                <br /><br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nulla consequuntur corrupti possimus natus, impedit tempora necessitatibus tempore! A aliquam soluta totam, omnis deserunt dolores quaerat molestias, ullam ea tempora fuga nobis distinctio excepturi numquam vero quibusdam. Sunt blanditiis quos similique possimus dolor optio quis praesentium adipisci beatae nam maxime ex, et hic nisi quibusdam provident deserunt aperiam impedit numquam. Minima eaque corrupti fugit praesentium quisquam corporis consectetur expedita commodi optio aspernatur repudiandae, quia, exercitationem adipisci veniam laudantium dignissimos nostrum iure culpa soluta veritatis porro laborum placeat ex. Laudantium asperiores neque quis officiis quisquam enim ex!
+            </p>
+        </div>
+      </section>
+    </div>
+    <script> 
+        let moon = document.getElementById("moon");
+        let star = document.getElementById("star");
+        let mountains_behind = document.getElementById("mountains_behind");
+        let mountains_front = document.getElementById("mountains_front");
+        let mainHeading = document.getElementById("mainHeading");
+        let exploreBtn = document.getElementById("exploreBtn");
+
+        window.addEventListener('scroll', () => {
+        let value = window.scrollY;
+        star.style.transform = `translateX(${value * 0.25}px)`;
+        moon.style.transform = `translateY(${value * 1.05}px)`;
+        mountains_behind.style.transform = `translateY(${value * 0.5}px)`;
+        mainHeading.style.left = `${value * 8}px`;
+        mainHeading.style.marginTop = `${value * 1.5}px`;
+        exploreBtn.style.marginTop = `${value * 1.5}px`;
+        });
+
+    </script>
+  </body>
+</html>
